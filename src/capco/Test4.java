@@ -1,0 +1,32 @@
+package capco;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+/**
+ * Created by Alex on 9/7/2016.
+ */
+public class Test4 {
+    class Inner {
+        void test() {
+            if (Test4.this.flag); {
+                sample();
+            }
+        }
+    }
+    private boolean flag = true;
+    public void sample() {
+        System.out.println("Sample");
+    }
+    public Test4(){
+        (new Inner()).test();
+    }
+
+    public static void main(String[] args) {
+        new Test4();
+
+    }
+
+
+}
